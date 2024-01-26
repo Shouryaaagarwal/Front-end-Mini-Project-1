@@ -1,0 +1,29 @@
+// var main = document.querySelector("#main")  ;
+
+// var crs = document.querySelector("#circles") ;
+
+// main.addEventListener("mousemove", function(dets){
+
+//     crs.style.left=dets.x+"px" ;
+//     crs.style.top=dets.y+"px";   
+
+// }) 
+ 
+
+// function crs(xscale , yscale) {
+//         var crs = document.querySelector("#circles");
+//         window.addEventListener("mousemove", function (dets) {
+//                 crs.style.transform = "scale(1)"; 
+        
+//                 crs.style.left = dets.x + "px";
+//                 crs.style.top = dets.y + "px"; 
+//                 crs.style.transform="scale(xscale)";
+//                 crs.style.transform="scale(yscale)";
+//                 var body = this.document.querySelector("body");
+//                 body.addEventListener("mouseleave", function () {
+//                         crs.style.transform = "scale(0)";
+                        
+//                     })
+            
+//                 })
+//             }

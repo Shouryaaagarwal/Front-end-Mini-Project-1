@@ -1,0 +1,369 @@
+ @font-face {
+     font-family: "font";
+     src: url("/Futura-Bold.ttf");
+ }
+
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ *::selection {
+     color: white;
+     background-color: black;
+ }
+
+ html,
+ body {
+     height: 100%;
+     width: 100%;
+
+ }
+ 
+ body{
+    background-color: #f7f7f7; 
+
+ }  
+ #nav{
+    /* background-color: blanchedalmond;  */
+    height: 100px; 
+    width: 100%; 
+    position: fixed;
+    z-index: 99; 
+    padding: 2vw 3vw; 
+    display: flex; 
+    align-items: flex-start; 
+    justify-content: space-between;
+ }   
+ #nav-part1{
+    /* background-color: red; */
+    height: 82px; 
+    overflow: hidden;
+ }
+ #nav-part1 svg{
+    display: block;
+ }
+ #nav-part2{
+    display: flex; 
+    align-items: center; 
+    gap: 30px;
+ }
+ #nav-links{
+    display: flex; 
+    align-items: center; 
+    gap: 30px; 
+    
+
+ }  
+ a{  
+    color: black; 
+    font-size: 15px; 
+    font-family: "font"; 
+    font-weight: 100;
+    text-decoration: none;
+ }
+ #icons{
+    display: flex; 
+    align-items: center; 
+    gap: 30px;
+
+ }
+
+ #cursor{
+    height: 250px; 
+    width: 250px; 
+    border-radius: 50%; 
+    background-color: bisque;  
+    opacity: 0.4;  
+    position: fixed;
+    transform: translate(-50%, -50%) scale(0); 
+    
+ }
+ #page1 {
+     min-height: 100vh;
+     width: 100%;
+     position: relative;
+     padding-top: 15vw;
+     padding-left: 3vw;
+
+ }
+
+ #page1 h1 {
+     font-family: "font";
+     font-size: 13vw;
+     text-transform: uppercase;
+     line-height: 0.9;
+     letter-spacing: -8px;
+ }
+
+ #video {
+     height: 100vh;
+     width: 100%;
+     position: relative;
+ }
+
+ #video video {
+     height: 100%;
+     width: 100%;
+     object-fit: cover;
+ }
+
+ #video #play {
+     padding: 3vw 2.2vw;
+     background-color: black;
+     color: #fff;
+     font-size: 1.5vw;
+     position: fixed;
+     font-family: "font";
+     border-radius: 50%;
+     opacity: 0;
+     scale: 0;
+
+ }
+
+ #page2 {
+     min-height: 100vh;
+     width: 100%;
+     position: relative;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 3vw 1vw;
+     /* background-color: red; */
+ }
+
+ #page2 .elem {
+     height: 100%;
+     width: 31%;
+     /* background-color: red;   */
+     overflow: hidden;
+     position: relative;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-evenly; 
+
+ }
+
+ #page2 .elem img {
+     height: 100%;
+     width: 100%;
+     object-fit: cover;
+     scale: 1.1;
+ }
+
+ #page2 .elem .dets {
+
+     height: 60px;
+     border-radius: 50px; 
+     width: 70%;
+     position: absolute;
+     background-color: palegoldenrod;
+     z-index: 9;
+   
+
+ }
+
+ #page3 {
+     min-height: 120vh;
+     width: 100%; 
+     display: flex; 
+     align-items: center; 
+     justify-content: space-evenly; 
+     flex-wrap: wrap;
+      
+ } 
+ .child{
+    height: 55vh; 
+    width: 40vw; 
+    /* background-color: red;  */
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+ }
+ .child img{
+    height: 100%; 
+    width: 100%; 
+    object-fit: cover; 
+
+ } 
+
+
+
+
+
+ @media (max-width:600px) {
+
+     #page1 {
+         min-height: 60vh;
+         width: 100%;
+         position: relative;
+         padding-top: 25vw;
+         padding-left: 3vw;
+
+     }
+
+     #page1 h1 {
+         font-family: "font";
+         font-size: 15vw;
+         text-transform: uppercase;
+         line-height: 0.9;
+         letter-spacing: -4px;
+     }
+
+     #video {
+         height: 25vh;
+         width: 100%;
+         padding-right: 2.5vw;
+     }
+
+     #video video {
+         height: 100%;
+         width: 100%;
+         object-fit: cover;
+     }
+
+     #video #play {
+         padding: 7.5vw 6vw;
+         color: #fff;
+         font-size: 4vw;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         font-family: "font";
+         border-radius: 50%;
+         opacity: 1;
+         scale: 1;
+         transform: translate(-50%, -50%);
+
+     }
+
+     #page2 {
+         min-height: 60vh;
+         width: 100%;
+         position: relative;
+         display: flex;
+         align-items: center;
+         flex-direction: column;
+
+         justify-content: space-between;
+         padding: 5vw 3vw;
+         /* background-color: red; */
+     }
+
+     #page2 .elem {
+         height: 100vh;
+         width: 100%;
+         overflow: hidden;
+         margin-bottom: 3vw;
+
+     }
+
+     #page2 .elem img {
+         height: 100%;
+         width: 100%;
+         object-fit: cover;
+         scale: 1.1;
+     } 
+
+     #page2 .elem .dets {
+
+        height: 40px;
+        border-radius: 50px; 
+        width: 70%;
+        position: absolute;
+        background-color: palegoldenrod;
+        z-index: 9;
+      
+   
+    }
+
+     
+ #page3 {
+    min-height: 120vh;
+    width: 100%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-evenly; 
+    flex-wrap: wrap;
+     
+} 
+.child{
+   height: 55vh; 
+   width: 88vw; 
+   /* background-color: red;  */
+   display: flex; 
+   align-items: center;  
+   padding: 15vw;
+   justify-content: space-between;
+}
+.child img{
+   height: 100%; 
+   width: 100%; 
+   object-fit: cover; 
+
+ 
+} 
+#nav{
+    /* background-color: blanchedalmond;  */
+    height: 100px; 
+    width: 100%; 
+    position: fixed;
+    z-index: 99; 
+    padding:2vw 3vw; 
+    display: flex; 
+    align-items: flex-start; 
+    justify-content: space-between;  
+   
+    
+ }   
+ #nav-part1{
+    /* background-color: red; */
+    height: 82px; 
+    overflow: hidden; 
+    
+ }
+ #nav-part1 svg{
+    display: block; 
+    height: 77px;
+ }
+ #nav-part2{
+    display: flex; 
+    align-items: center; 
+    gap: 30px;
+ }
+ #nav-links{
+    display: flex; 
+    align-items: center; 
+    gap: 30px; 
+    display: none;
+
+ }  
+ a{  
+    color: black; 
+    font-size: 15px; 
+    font-family: "font"; 
+    font-weight: 100;
+    text-decoration: none;
+ }
+ #icons{
+    display: flex; 
+    align-items: center; 
+    gap: 30px;
+
+ }
+
+ #cursor{
+    height: 250px; 
+    width: 250px; 
+    border-radius: 50%; 
+    background-color: bisque;  
+    opacity: 0.4;  
+    position: fixed;
+    transform: translate(-50%, -50%) scale(0); 
+ }
+
+
+
+ }
